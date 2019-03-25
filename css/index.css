@@ -156,11 +156,11 @@ h5 {
   margin: 0 auto;
 }
 
-/*============= HEADER ============= */
-
 p {
   line-height: 1.25;
 }
+
+/*============= HEADER ============= */
 
 header {
   display: flex;
