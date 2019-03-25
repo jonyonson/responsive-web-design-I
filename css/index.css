@@ -204,9 +204,14 @@ header nav a:hover {
 
   header nav a {
     margin: 0;
+    /* font-size: 16px; */
   }
 
   header .logo {
+    order: -1;
+  }
+
+  .logo-link {
     order: -1;
   }
 }
@@ -274,14 +279,23 @@ header nav a:hover {
     margin-bottom: 75px;
   }
 
+  .cta img {
+    display: none;
+  }
+
   .cta-text {
     font-size: 72px;
   }
 
-  .cta img {
-    display: none;
+  .cta .cta-text button {
+    padding: 6px 40px;
+    font-size: 16px;
+    /* margin-top: 4px; */
   }
 }
+
+/*======== CTA MEDIA QUERY ==========*/
+/*======= MAX-WIDTH: 500px ==========*/
 
 @media (max-width: 500px) {
   .cta {
@@ -290,7 +304,7 @@ header nav a:hover {
 }
 
 .main-content {
-  border-top: 1px solid black;
+  border-top: 2px solid black;
   margin-top: 76px;
   padding-top: 39px;
 }
@@ -317,7 +331,7 @@ header nav a:hover {
 
 .contact {
   margin-top: 57px;
-  border-top: 1px solid black;
+  border-top: 2px solid black;
   padding: 39px 10px 0;
 }
 
@@ -382,6 +396,108 @@ footer {
   }
 
   .main-content .middle-img {
+    margin-top: 0;
+  }
+}
+
+/*===========   SERVICES PAGE =============*/
+
+.services-header-img {
+  margin-top: 20px;
+}
+
+.services {
+  border-bottom: 1px solid black;
+  margin: 30px 0 40px;
+}
+
+.services h1 {
+  font-size: 26px;
+}
+
+.services p {
+  margin-bottom: 40px;
+}
+
+.services-box {
+  border: 1px solid black;
+  background: #f4f3f4;
+  padding: 20px;
+  width: 420px;
+  margin-bottom: 40px;
+}
+
+.services-box p {
+  margin-bottom: 15px;
+}
+
+.services-box button {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 10px 40px;
+  display: block;
+}
+
+.services-parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services-bottom-content {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid black;
+  padding-top: 35px;
+}
+
+.services-bottom-content-child {
+  width: 420px;
+}
+
+.services-bottom-content ul {
+  list-style-type: square;
+  list-style-position: inside;
+  margin-top: 15px;
+  line-height: 2;
+}
+
+/*======= SERVICES PAGE MEDIA QUERY =======*/
+/*=========   MAX-WIDTH: 800px ============*/
+
+.services-header-img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 879px) {
+  .services,
+  .services-parent {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .services-bottom-content {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .services-info-img {
+    display: none;
+  }
+
+  .services-bottom-content-child {
+    width: 100%;
+  }
+
+  .services-box {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .services-header-img {
     margin-top: 0;
   }
 }
